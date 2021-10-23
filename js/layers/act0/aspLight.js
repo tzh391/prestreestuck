@@ -1,6 +1,6 @@
 if (act == "0.0") addLayer("aspLight", {
     name: "Light",
-    symbol: "<img src='data/light.png' style='width:calc(80%);height:calc(80%);margin:10%'></img>",
+    symbol: "<img src='data/aspects/light.png' style='width:calc(80%);height:calc(80%);margin:10%'></img>",
     row: 4,
     position: 1,
     branches: [],

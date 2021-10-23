@@ -1,6 +1,6 @@
 if (act == "0.0") addLayer("aspBreath", {
     name: "Breath",
-    symbol: "<img src='data/breath.png' style='width:calc(80% - 2px);height:calc(80% - 2px);margin:10%'></img>",
+    symbol: "<img src='data/aspects/breath.png' style='width:calc(80% - 2px);height:calc(80% - 2px);margin:10%'></img>",
     row: 7,
     position: 0,
 
@@ -494,7 +494,7 @@ if (act == "0.0") addLayer("aspBreath", {
                     ["blank", "15px"],
                     ["raw-html", `
                         <div class="title-bar" style="background-color:#b70d0e">
-                            <h3><img src="data/time.png" style="height:24px;width:24px;transform:translateY(5px)" /> Time</h3>
+                            <h3><img src="data/aspects/time.png" style="height:24px;width:24px;transform:translateY(5px)" /> Time</h3>
                         </div>
                     `],
                     ["blank", "10px"],
@@ -502,7 +502,7 @@ if (act == "0.0") addLayer("aspBreath", {
                     ["blank", "15px"],
                     ["raw-html", `
                         <div class="title-bar" style="background-color:#000000">
-                            <h3><img src="data/space.png" style="height:24px;width:24px;transform:translateY(5px)" /> Space</h3>
+                            <h3><img src="data/aspects/space.png" style="height:24px;width:24px;transform:translateY(5px)" /> Space</h3>
                         </div>
                     `],
                     ["blank", "10px"],
@@ -510,7 +510,7 @@ if (act == "0.0") addLayer("aspBreath", {
                     ["blank", "15px"],
                     ["raw-html", `
                         <div class="title-bar" style="background-color:#00923d">
-                            <h3><img src="data/mind.png" style="height:24px;width:24px;transform:translateY(5px)" /> Mind</h3>
+                            <h3><img src="data/aspects/mind.png" style="height:24px;width:24px;transform:translateY(5px)" /> Mind</h3>
                         </div>
                     `],
                     ["blank", "10px"],
@@ -518,7 +518,7 @@ if (act == "0.0") addLayer("aspBreath", {
                     ["blank", "15px"],
                     ["raw-html", `
                         <div class="title-bar" style="background-color:#ffde55;color:black;">
-                            <h3><img src="data/hope.png" style="height:24px;width:24px;transform:translateY(5px)" /> Hope</h3>
+                            <h3><img src="data/aspects/hope.png" style="height:24px;width:24px;transform:translateY(5px)" /> Hope</h3>
                         </div>
                     `],
                     ["blank", "10px"],
@@ -526,7 +526,7 @@ if (act == "0.0") addLayer("aspBreath", {
                     ["blank", "15px"],
                     ["raw-html", `
                         <div class="title-bar" style="background-color:#f0840c;color:black;">
-                            <h3><img src="data/light.png" style="height:24px;width:24px;transform:translateY(5px)" /> Light</h3>
+                            <h3><img src="data/aspects/light.png" style="height:24px;width:24px;transform:translateY(5px)" /> Light</h3>
                         </div>
                     `],
                     ["blank", "10px"],
@@ -534,7 +534,7 @@ if (act == "0.0") addLayer("aspBreath", {
                     ["blank", "15px"],
                     ["raw-html", `
                         <div class="title-bar" style="background-color:#a49787;color:black;">
-                            <h3><img src="data/life.png" style="height:24px;width:24px;transform:translateY(5px)" /> Life</h3>
+                            <h3><img src="data/aspects/life.png" style="height:24px;width:24px;transform:translateY(5px)" /> Life</h3>
                         </div>
                     `],
                     ["blank", "10px"],
@@ -542,7 +542,7 @@ if (act == "0.0") addLayer("aspBreath", {
                     ["blank", "15px"],
                     ["raw-html", `
                         <div class="title-bar" style="background-color:#4379e6;color:black;">
-                            <h3><img src="data/breath.png" style="height:24px;width:24px;transform:translateY(5px)" /> Breath</h3>
+                            <h3><img src="data/aspects/breath.png" style="height:24px;width:24px;transform:translateY(5px)" /> Breath</h3>
                         </div>
                     `],
                     ["blank", "10px"],

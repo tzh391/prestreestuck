@@ -1,6 +1,6 @@
 if (act == "0.0") addLayer("aspBlood", {
     name: "Blood",
-    symbol: "<img src='data/blood.png' style='width:calc(80% - 2px);height:calc(80% - 2px);margin:10%'></img>",
+    symbol: "<img src='data/aspects/blood.png' style='width:calc(80% - 2px);height:calc(80% - 2px);margin:10%'></img>",
     row: 7,
     position: 0,
 
@@ -494,7 +494,7 @@ if (act == "0.0") addLayer("aspBlood", {
                     ["blank", "15px"],
                     ["raw-html", `
                         <div class="title-bar" style="background-color:#b70d0e">
-                            <h3><img src="data/time.png" style="height:24px;width:24px;transform:translateY(5px)" /> Time</h3>
+                            <h3><img src="data/aspects/time.png" style="height:24px;width:24px;transform:translateY(5px)" /> Time</h3>
                         </div>
                     `],
                     ["blank", "10px"],
@@ -502,7 +502,7 @@ if (act == "0.0") addLayer("aspBlood", {
                     ["blank", "15px"],
                     ["raw-html", `
                         <div class="title-bar" style="background-color:#000000">
-                            <h3><img src="data/space.png" style="height:24px;width:24px;transform:translateY(5px)" /> Space</h3>
+                            <h3><img src="data/aspects/space.png" style="height:24px;width:24px;transform:translateY(5px)" /> Space</h3>
                         </div>
                     `],
                     ["blank", "10px"],
@@ -510,7 +510,7 @@ if (act == "0.0") addLayer("aspBlood", {
                     ["blank", "15px"],
                     ["raw-html", `
                         <div class="title-bar" style="background-color:#55142a">
-                            <h3><img src="data/heart.png" style="height:24px;width:24px;transform:translateY(5px)" /> Heart</h3>
+                            <h3><img src="data/aspects/heart.png" style="height:24px;width:24px;transform:translateY(5px)" /> Heart</h3>
                         </div>
                     `],
                     ["blank", "10px"],
@@ -518,7 +518,7 @@ if (act == "0.0") addLayer("aspBlood", {
                     ["blank", "15px"],
                     ["raw-html", `
                         <div class="title-bar" style="background-color:#520c61">
-                            <h3><img src="data/rage.png" style="height:24px;width:24px;transform:translateY(5px)" /> Rage</h3>
+                            <h3><img src="data/aspects/rage.png" style="height:24px;width:24px;transform:translateY(5px)" /> Rage</h3>
                         </div>
                     `],
                     ["blank", "10px"],
@@ -526,7 +526,7 @@ if (act == "0.0") addLayer("aspBlood", {
                     ["blank", "15px"],
                     ["raw-html", `
                         <div class="title-bar" style="background-color:#104ea2">
-                            <h3><img src="data/void.png" style="height:24px;width:24px;transform:translateY(5px)" /> Void</h3>
+                            <h3><img src="data/aspects/void.png" style="height:24px;width:24px;transform:translateY(5px)" /> Void</h3>
                         </div>
                     `],
                     ["blank", "10px"],
@@ -534,7 +534,7 @@ if (act == "0.0") addLayer("aspBlood", {
                     ["blank", "15px"],
                     ["raw-html", `
                         <div class="title-bar" style="background-color:#306800">
-                            <h3><img src="data/doom.png" style="height:24px;width:24px;transform:translateY(5px)" /> Doom</h3>
+                            <h3><img src="data/aspects/doom.png" style="height:24px;width:24px;transform:translateY(5px)" /> Doom</h3>
                         </div>
                     `],
                     ["blank", "10px"],
@@ -542,7 +542,7 @@ if (act == "0.0") addLayer("aspBlood", {
                     ["blank", "15px"],
                     ["raw-html", `
                         <div class="title-bar" style="background-color:#3e1601">
-                            <h3><img src="data/blood.png" style="height:24px;width:24px;transform:translateY(5px)" /> Blood</h3>
+                            <h3><img src="data/aspects/blood.png" style="height:24px;width:24px;transform:translateY(5px)" /> Blood</h3>
                         </div>
                     `],
                     ["blank", "10px"],

@@ -1,6 +1,6 @@
 if (act == "0.0") addLayer("aspMind", {
     name: "Mind",
-    symbol: "<img src='data/mind.png' style='width:calc(80% - 3px);height:calc(80% - 3px);margin:10%'></img>",
+    symbol: "<img src='data/aspects/mind.png' style='width:calc(80% - 3px);height:calc(80% - 3px);margin:10%'></img>",
     row: 2,
     position: 1,
     branches: ["aspSpace"],

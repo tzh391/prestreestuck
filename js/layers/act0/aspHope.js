@@ -1,6 +1,6 @@
 if (act == "0.0") addLayer("aspHope", {
     name: "Hope",
-    symbol: "<img src='data/hope.png' style='width:calc(80% + 0px);height:calc(80% + 0px);margin:10%'></img>",
+    symbol: "<img src='data/aspects/hope.png' style='width:calc(80% + 0px);height:calc(80% + 0px);margin:10%'></img>",
     row: 3,
     position: 0,
     branches: [["aspHeart", 2]],

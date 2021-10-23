@@ -1,6 +1,6 @@
 if (act == "0.0") addLayer("aspRage", {
     name: "Rage",
-    symbol: "<img src='data/rage.png' style='width:calc(80% + 0px);height:calc(80% + 0px);margin:10%'></img>",
+    symbol: "<img src='data/aspects/rage.png' style='width:calc(80% + 0px);height:calc(80% + 0px);margin:10%'></img>",
     row: 3,
     position: 1,
     branches: [["aspMind", 2]],

@@ -1,6 +1,6 @@
 if (act == "0.0") addLayer("aspLife", {
     name: "Life",
-    symbol: "<img src='data/life.png' style='width:calc(80%);height:calc(80%);margin:10%'></img>",
+    symbol: "<img src='data/aspects/life.png' style='width:calc(80%);height:calc(80%);margin:10%'></img>",
     row: 5,
     position: 1,
     branches: [["skaia", 3]],

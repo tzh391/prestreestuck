@@ -273,6 +273,14 @@ addLayer("tracker", {
             onComplete() { player.tracker.points = player.tracker.points.add(1) },
             tooltip: "Reach e1e100 points.",
         },
+        113: {
+            name() { return hasAchievement("tracker", this.id) ? "I Aspect You to Do It" : "?????"},
+            image() { return hasAchievement("tracker", this.id) ? "data/achs/113.png" : ""},
+            unlocked() { return (act == "0.1" || hasAchievement("tracker", 113)) },
+            done() { return act == "0.1" && player.metaAspects.upgrades.length >= 38 },
+            onComplete() { player.tracker.points = player.tracker.points.add(1) },
+            tooltip: "Buy all Aspect upgrades.",
+        },
     },
 
     update(delta) {

@@ -1,0 +1,35 @@
+From 5624a12f7c027430bb709cecfb12044bcca9a68b Mon Sep 17 00:00:00 2001
+From: ducdat0507 <62660527+ducdat0507@users.noreply.github.com>
+Date: Mon, 4 Oct 2021 20:37:38 +0700
+Subject: [PATCH] Revert "Merge remote-tracking branch 'origin/master' into
+ retcon"
+
+This reverts commit 5d3969b77ad52528c84e3c137271da11bcc4b39e, reversing
+changes made to a875d4950d171eaff1d37d674ca6734d1e6e5588.
+---
+ js/layers/act0/metaMeta.js | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/js/layers/act0/metaMeta.js b/js/layers/act0/metaMeta.js
+index 43de473..3b8546a 100644
+--- a/js/layers/act0/metaMeta.js
++++ b/js/layers/act0/metaMeta.js
+@@ -40,7 +40,7 @@ if (act == "0.2") addLayer("metaMeta", {
+         var bns = new Decimal(1)
+         for (var a = 51; a <= 62; a++) bns = bns.mul(tmp[this.layer].buyables[a].effect)
+         var ptb = new Decimal(player.metaMeta.metaFaucets[7]).add(1).log(10).add(1).pow(0.25)
+-        var tet = mtn.pow(mtt).add(1).log(10).mul(bns).mul(asf).mul(clf).pow(tmd.mul(ptb).div(nrf.div(player.metaMeta.sacrificeMulti)))
++        var tet = mtn.pow(mtt).add(1).log(10).mul(bns).mul(asf).mul(clf).root(nrf.div(player.metaMeta.sacrificeMulti)).pow(tmd).pow(ptb)
+         if (hasUpgrade("metaMeta", 19)) tet = tet.pow(player.metaMeta.overflows.add(1))
+         if (tet.gt(Number.MAX_VALUE)) tet = Number.MAX_VALUE
+         var eff = {
+@@ -2434,4 +2434,4 @@ if (act == "0.2") addLayer("metaMeta", {
+             onPress() { clickClickable("metaMeta", 13) } 
+         },
+     ],
+-})
++})
+\ No newline at end of file
+-- 
+2.30.1.windows.1
+

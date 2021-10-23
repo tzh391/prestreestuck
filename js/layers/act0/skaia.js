@@ -229,13 +229,121 @@ if (act.startsWith("0")) addLayer("skaia", {
         } : {},
         ...act == "0.1" ? {
             31: {
-                title: "<p style='transform: scale(-1, -1)'><alternate>THATS NOT VERY CREATIVE</alternate>",
-                description: "Unlocks Classes",
-                cost: new Decimal("ee221"),
+                title: "<p style='transform: scale(-1, -1)'><alternate>THATS AN IMPROVEMENT</alternate>",
+                description: "Unlocks Classes.",
+                cost: new Decimal("ee70"),
                 currencyLocation() { return player},
                 currencyDisplayName: "points",
                 currencyInternalName: "points",
                 unlocked() { return true },
+            },
+            41: {
+                title: "<p style='transform: scale(-1, -1)'><alternate>THATS SOME IMPROVEMENT</alternate>",
+                description: "Tesseracts Rogue Power gain.",
+                cost: new Decimal("ee85"),
+                currencyLocation() { return player},
+                currencyDisplayName: "points",
+                currencyInternalName: "points",
+                unlocked() { return hasUpgrade("skaia", 31) },
+            },
+            42: {
+                title: "<p style='transform: scale(-1, -1)'><alternate>AUTO ROGUE</alternate>",
+                description: "You now always gain Rogue Power, even outside of Rogue nerf.",
+                cost: new Decimal("ee3200"),
+                currencyLocation() { return player},
+                currencyDisplayName: "points",
+                currencyInternalName: "points",
+                unlocked() { return hasUpgrade("skaia", 61) },
+                onPurchase() {
+                    player[this.layer].clickables[11] = ""
+                }
+            },
+            43: {
+                title: "<p style='transform: scale(-1, -1)'><alternate>BETTER ROGUE</alternate>",
+                description: "Koch curves (^1.2619) Rogue Power gain.",
+                cost: new Decimal("ee7000"),
+                currencyLocation() { return player},
+                currencyDisplayName: "points",
+                currencyInternalName: "points",
+                unlocked() { return hasUpgrade("skaia", 71) },
+                onPurchase() {
+                    player[this.layer].clickables[11] = ""
+                }
+            },
+            51: {
+                title: "<p style='transform: scale(-1, -1)'><alternate>THATS MUCH IMPROVEMENT</alternate>",
+                description: "Cubes Thief Power gain.",
+                cost: new Decimal("ee120"),
+                currencyLocation() { return player},
+                currencyDisplayName: "points",
+                currencyInternalName: "points",
+                unlocked() { return hasUpgrade("skaia", 41) },
+            },
+            52: {
+                title: "<p style='transform: scale(-1, -1)'><alternate>AUTO THIEF</alternate>",
+                description: "You gain 100% of Thief Power gain on Thief reset each second.",
+                cost: new Decimal("ee4200"),
+                currencyLocation() { return player},
+                currencyDisplayName: "points",
+                currencyInternalName: "points",
+                unlocked() { return hasUpgrade("skaia", 61) },
+                onPurchase() {
+                    player[this.layer].clickables[11] = ""
+                }
+            },
+            53: {
+                title: "<p style='transform: scale(-1, -1)'><alternate>BETTER THIEF</alternate>",
+                description: "Sierpinski triangles (^1.5850) Thief Power gain.",
+                cost: new Decimal("ee12000"),
+                currencyLocation() { return player},
+                currencyDisplayName: "points",
+                currencyInternalName: "points",
+                unlocked() { return hasUpgrade("skaia", 71) },
+                onPurchase() {
+                    player[this.layer].clickables[11] = ""
+                }
+            },
+            61: {
+                title: "<p style='transform: scale(-1, -1)'><alternate>THATS ANOTHER IMPROVEMENT</alternate>",
+                description: "Unlocks 2 new classes.",
+                cost: new Decimal("ee500"),
+                currencyLocation() { return player},
+                currencyDisplayName: "points",
+                currencyInternalName: "points",
+                unlocked() { return hasUpgrade("skaia", 51) },
+            },
+            62: {
+                title: "<p style='transform: scale(-1, -1)'><alternate>AUTO HEIR</alternate>",
+                description: "You now always gain Heir Power, even outside of Heir nerf.",
+                cost: new Decimal("ee28000"),
+                currencyLocation() { return player},
+                currencyDisplayName: "points",
+                currencyInternalName: "points",
+                unlocked() { return hasUpgrade("skaia", 71) },
+                onPurchase() {
+                    player[this.layer].clickables[11] = ""
+                }
+            },
+            63: {
+                title: "<p style='transform: scale(-1, -1)'><alternate>BETTER MAID</alternate>",
+                description: "Squares Maid Power gain.",
+                cost: new Decimal("ee30000"),
+                currencyLocation() { return player},
+                currencyDisplayName: "points",
+                currencyInternalName: "points",
+                unlocked() { return hasUpgrade("skaia", 71) },
+                onPurchase() {
+                    player[this.layer].clickables[11] = ""
+                }
+            },
+            71: {
+                title: "<p style='transform: scale(-1, -1)'><alternate>THATS YET ANOTHER IMPROVEMENT</alternate>",
+                description: "Unlocks 2 new classes.",
+                cost: new Decimal("ee6000"),
+                currencyLocation() { return player},
+                currencyDisplayName: "points",
+                currencyInternalName: "points",
+                unlocked() { return hasUpgrade("skaia", 61) },
             },
         } : {},
     },
@@ -403,6 +511,10 @@ if (act.startsWith("0")) addLayer("skaia", {
                     ["display-text", () => "Your points are giving you " + format(tmp.skaia.effect.levelGain.mul(60)) + " Echepoints per minute."],
                     ["blank", "15px"],
                     ["upgrade", "31"],
+                    ["row", [["upgrade", "42"], ["upgrade", "41"], ["upgrade", "43"]]],
+                    ["row", [["upgrade", "52"], ["upgrade", "51"], ["upgrade", "53"]]],
+                    ["row", [["upgrade", "62"], ["upgrade", "61"], ["upgrade", "63"]]],
+                    ["upgrade", "71"],
                 ]
             },
         },

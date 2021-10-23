@@ -1,6 +1,6 @@
 if (act == "0.0") addLayer("aspTime", {
     name: "Time",
-    symbol: "<img src='data/time.png' style='width:calc(80% - 2px);height:calc(80% - 2px);margin:10%'></img>",
+    symbol: "<img src='data/aspects/time.png' style='width:calc(80% - 2px);height:calc(80% - 2px);margin:10%'></img>",
     row: 0,
     position: 0,
 

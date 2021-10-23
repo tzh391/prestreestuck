@@ -1,6 +1,6 @@
 if (act == "0.0") addLayer("aspSpace", {
     name: "Space",
-    symbol: "<img src='data/space.png' style='width:calc(80% - 2px);height:calc(80% - 2px);margin:10%'></img>",
+    symbol: "<img src='data/aspects/space.png' style='width:calc(80% - 2px);height:calc(80% - 2px);margin:10%'></img>",
     row: 1,
     position: 0,
     branches: ["aspTime", "aspLight"],

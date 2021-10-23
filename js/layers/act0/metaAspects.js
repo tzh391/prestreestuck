@@ -53,13 +53,13 @@ if (act == "0.1") addLayer("metaAspects", {
         var effs = {
             pointBoost: Decimal.pow(player.metaAspects.points.min(100), player.metaAspects.points.div(100)),
             selfGain: new Decimal(1),
-            globalGain: new Decimal(1),
+            globalGain: new Decimal(tmp.metaClasses.effect.aspGlobalGain),
         }
 
         for (let a = 11; a <= 22; a++) {
             effs.selfGain = effs.selfGain.mul(tmp.metaAspects.buyables[a].effect)
         }
-        effs.selfGain = effs.selfGain.sub(1)
+        effs.selfGain = effs.selfGain.sub(1).mul(tmp.metaClasses.effect.aspectBoost)
 
         if (hasUpgrade("metaAspects", 12)) effs.globalGain = effs.globalGain.mul(upgradeEffect("metaAspects", 12))
         if (hasUpgrade("metaAspects", 13)) effs.globalGain = effs.globalGain.mul(upgradeEffect("metaAspects", 13))
@@ -144,7 +144,7 @@ if (act == "0.1") addLayer("metaAspects", {
             },
         },
         11: {
-            display: "<img src='data/time.png' style='width:calc(80% - 2px);height:calc(80% - 2px);margin:10%'></img>",
+            display: "<img src='data/aspects/time.png' style='width:calc(80% - 2px);height:calc(80% - 2px);margin:10%'></img>",
             tooltip() { 
                 return format(player[this.layer].buyables[this.id], 0) + " Time Power" + 
                     (player[this.layer].apAllocated.includes(this.id) ? `<br/><h5>×${format(tmp[this.layer].buyables[this.id].selfBoost)}` : "") 
@@ -156,6 +156,7 @@ if (act == "0.1") addLayer("metaAspects", {
                 if (hasUpgrade("metaAspects", 31)) eff = eff.mul(upgradeEffect("metaAspects", 31))
                 if (hasUpgrade("metaAspects", 81)) eff = eff.mul(upgradeEffect("metaAspects", 81))
                 if (hasUpgrade("metaAspects", 25)) eff = eff.mul(upgradeEffect("metaAspects", 25))
+                for (a = 11; a < 371; a += 30) if (hasUpgrade("metaClasses", a)) eff = eff.mul(upgradeEffect("metaClasses", a))
                 return eff
             },
             buy() {
@@ -175,7 +176,7 @@ if (act == "0.1") addLayer("metaAspects", {
             },
         },
         12: {
-            display: "<img src='data/space.png' style='width:calc(80% - 2px);height:calc(80% - 2px);margin:10%'></img>",
+            display: "<img src='data/aspects/space.png' style='width:calc(80% - 2px);height:calc(80% - 2px);margin:10%'></img>",
             tooltip() { 
                 return format(player[this.layer].buyables[this.id], 0) + " Space Power" + 
                     (player[this.layer].apAllocated.includes(this.id) ? `<br/><h5>×${format(tmp[this.layer].buyables[this.id].selfBoost)}` : "") 
@@ -189,6 +190,7 @@ if (act == "0.1") addLayer("metaAspects", {
                 if (hasUpgrade("metaAspects", 51)) eff = eff.mul(upgradeEffect("metaAspects", 51))
                 if (hasUpgrade("metaAspects", 81)) eff = eff.mul(upgradeEffect("metaAspects", 82))
                 if (hasUpgrade("metaAspects", 35)) eff = eff.mul(upgradeEffect("metaAspects", 35))
+                for (a = 12; a < 372; a += 30) if (hasUpgrade("metaClasses", a)) eff = eff.mul(upgradeEffect("metaClasses", a))
                 return eff
             },
             buy() {
@@ -208,7 +210,7 @@ if (act == "0.1") addLayer("metaAspects", {
             },
         },
         13: {
-            display: "<img src='data/heart.png' style='width:calc(80% - 1px);height:calc(80% - 1px);margin:10%'></img>",
+            display: "<img src='data/aspects/heart.png' style='width:calc(80% - 1px);height:calc(80% - 1px);margin:10%'></img>",
             tooltip() { 
                 return format(player[this.layer].buyables[this.id], 0) + " Heart Power" + 
                     (player[this.layer].apAllocated.includes(this.id) ? `<br/><h5>×${format(tmp[this.layer].buyables[this.id].selfBoost)}` : "") 
@@ -217,8 +219,10 @@ if (act == "0.1") addLayer("metaAspects", {
             effect(x) { return new Decimal(1).add(x || getBuyableAmount(this.layer, this.id)).sqrt() },
             selfBoost() {
                 let eff = new Decimal(1)
+                if (hasUpgrade("metaAspects", 61)) eff = eff.mul(upgradeEffect("metaAspects", 61))
                 if (hasUpgrade("metaAspects", 131)) eff = eff.mul(upgradeEffect("metaAspects", 131))
                 if (hasUpgrade("metaAspects", 45)) eff = eff.mul(upgradeEffect("metaAspects", 45))
+                for (a = 13; a < 373; a += 30) if (hasUpgrade("metaClasses", a)) eff = eff.mul(upgradeEffect("metaClasses", a))
                 return eff
             },
             buy() {
@@ -238,7 +242,7 @@ if (act == "0.1") addLayer("metaAspects", {
             },
         },
         14: {
-            display: "<img src='data/mind.png' style='width:calc(80% - 3px);height:calc(80% - 3px);margin:10%'></img>",
+            display: "<img src='data/aspects/mind.png' style='width:calc(80% - 3px);height:calc(80% - 3px);margin:10%'></img>",
             tooltip() { 
                 return format(player[this.layer].buyables[this.id], 0) + " Mind Power" + 
                     (player[this.layer].apAllocated.includes(this.id) ? `<br/><h5>×${format(tmp[this.layer].buyables[this.id].selfBoost)}` : "") 
@@ -247,8 +251,10 @@ if (act == "0.1") addLayer("metaAspects", {
             effect(x) { return new Decimal(1).add(x || getBuyableAmount(this.layer, this.id)).sqrt() },
             selfBoost() {
                 let eff = new Decimal(1)
+                if (hasUpgrade("metaAspects", 71)) eff = eff.mul(upgradeEffect("metaAspects", 71))
                 if (hasUpgrade("metaAspects", 121)) eff = eff.mul(upgradeEffect("metaAspects", 121))
                 if (hasUpgrade("metaAspects", 55)) eff = eff.mul(upgradeEffect("metaAspects", 55))
+                for (a = 14; a < 374; a += 30) if (hasUpgrade("metaClasses", a)) eff = eff.mul(upgradeEffect("metaClasses", a))
                 return eff
             },
             buy() {
@@ -268,7 +274,7 @@ if (act == "0.1") addLayer("metaAspects", {
             },
         },
         15: {
-            display: "<img src='data/hope.png' style='width:calc(80% - 0px);height:calc(80% - 0px);margin:10%'></img>",
+            display: "<img src='data/aspects/hope.png' style='width:calc(80% - 0px);height:calc(80% - 0px);margin:10%'></img>",
             tooltip() { 
                 return format(player[this.layer].buyables[this.id], 0) + " Hope Power" + 
                     (player[this.layer].apAllocated.includes(this.id) ? `<br/><h5>×${format(tmp[this.layer].buyables[this.id].selfBoost)}` : "") 
@@ -277,9 +283,9 @@ if (act == "0.1") addLayer("metaAspects", {
             effect(x) { return new Decimal(1).add(x || getBuyableAmount(this.layer, this.id)).sqrt() },
             selfBoost() {
                 let eff = new Decimal(1)
-                if (hasUpgrade("metaAspects", 61)) eff = eff.mul(upgradeEffect("metaAspects", 61))
                 if (hasUpgrade("metaAspects", 122)) eff = eff.mul(upgradeEffect("metaAspects", 122))
                 if (hasUpgrade("metaAspects", 65)) eff = eff.mul(upgradeEffect("metaAspects", 65))
+                for (a = 21; a < 381; a += 30) if (hasUpgrade("metaClasses", a)) eff = eff.mul(upgradeEffect("metaClasses", a))
                 return eff
             },
             buy() {
@@ -299,7 +305,7 @@ if (act == "0.1") addLayer("metaAspects", {
             },
         },
         16: {
-            display: "<img src='data/rage.png' style='width:calc(80% - 0px);height:calc(80% - 0px);margin:10%'></img>",
+            display: "<img src='data/aspects/rage.png' style='width:calc(80% - 0px);height:calc(80% - 0px);margin:10%'></img>",
             tooltip() { 
                 return format(player[this.layer].buyables[this.id], 0) + " Rage Power" + 
                     (player[this.layer].apAllocated.includes(this.id) ? `<br/><h5>×${format(tmp[this.layer].buyables[this.id].selfBoost)}` : "") 
@@ -308,9 +314,9 @@ if (act == "0.1") addLayer("metaAspects", {
             effect(x) { return new Decimal(1).add(x || getBuyableAmount(this.layer, this.id)).sqrt() },
             selfBoost() {
                 let eff = new Decimal(1)
-                if (hasUpgrade("metaAspects", 71)) eff = eff.mul(upgradeEffect("metaAspects", 71))
                 if (hasUpgrade("metaAspects", 132)) eff = eff.mul(upgradeEffect("metaAspects", 132))
                 if (hasUpgrade("metaAspects", 75)) eff = eff.mul(upgradeEffect("metaAspects", 75))
+                for (a = 22; a < 382; a += 30) if (hasUpgrade("metaClasses", a)) eff = eff.mul(upgradeEffect("metaClasses", a))
                 return eff
             },
             buy() {
@@ -330,7 +336,7 @@ if (act == "0.1") addLayer("metaAspects", {
             },
         },
         17: {
-            display: "<img src='data/light.png' style='width:calc(80%);height:calc(80%);margin:10%'></img>",
+            display: "<img src='data/aspects/light.png' style='width:calc(80%);height:calc(80%);margin:10%'></img>",
             tooltip() { 
                 return format(player[this.layer].buyables[this.id], 0) + " Light Power" + 
                     (player[this.layer].apAllocated.includes(this.id) ? `<br/><h5>×${format(tmp[this.layer].buyables[this.id].selfBoost)}` : "") 
@@ -341,6 +347,7 @@ if (act == "0.1") addLayer("metaAspects", {
                 let eff = new Decimal(1)
                 if (hasUpgrade("metaAspects", 123)) eff = eff.mul(upgradeEffect("metaAspects", 123))
                 if (hasUpgrade("metaAspects", 85)) eff = eff.mul(upgradeEffect("metaAspects", 85))
+                for (a = 23; a < 383; a += 30) if (hasUpgrade("metaClasses", a)) eff = eff.mul(upgradeEffect("metaClasses", a))
                 return eff
             },
             buy() {
@@ -360,7 +367,7 @@ if (act == "0.1") addLayer("metaAspects", {
             },
         },
         18: {
-            display: "<img src='data/void.png' style='width:calc(80%);height:calc(80%);margin:10%'></img>",
+            display: "<img src='data/aspects/void.png' style='width:calc(80%);height:calc(80%);margin:10%'></img>",
             tooltip() { 
                 return format(player[this.layer].buyables[this.id], 0) + " Void Power" + 
                     (player[this.layer].apAllocated.includes(this.id) ? `<br/><h5>×${format(tmp[this.layer].buyables[this.id].selfBoost)}` : "") 
@@ -371,6 +378,7 @@ if (act == "0.1") addLayer("metaAspects", {
                 let eff = new Decimal(1)
                 if (hasUpgrade("metaAspects", 133)) eff = eff.mul(upgradeEffect("metaAspects", 133))
                 if (hasUpgrade("metaAspects", 95)) eff = eff.mul(upgradeEffect("metaAspects", 95))
+                for (a = 24; a < 384; a += 30) if (hasUpgrade("metaClasses", a)) eff = eff.mul(upgradeEffect("metaClasses", a))
                 return eff
             },
             buy() {
@@ -390,7 +398,7 @@ if (act == "0.1") addLayer("metaAspects", {
             },
         },
         19: {
-            display: "<img src='data/life.png' style='width:calc(80%);height:calc(80%);margin:10%'></img>",
+            display: "<img src='data/aspects/life.png' style='width:calc(80%);height:calc(80%);margin:10%'></img>",
             tooltip() { 
                 return format(player[this.layer].buyables[this.id], 0) + " Life Power" + 
                     (player[this.layer].apAllocated.includes(this.id) ? `<br/><h5>×${format(tmp[this.layer].buyables[this.id].selfBoost)}` : "") 
@@ -401,6 +409,7 @@ if (act == "0.1") addLayer("metaAspects", {
                 let eff = new Decimal(1)
                 if (hasUpgrade("metaAspects", 124)) eff = eff.mul(upgradeEffect("metaAspects", 124))
                 if (hasUpgrade("metaAspects", 105)) eff = eff.mul(upgradeEffect("metaAspects", 105))
+                for (a = 31; a < 391; a += 30) if (hasUpgrade("metaClasses", a)) eff = eff.mul(upgradeEffect("metaClasses", a))
                 return eff
             },
             buy() {
@@ -420,7 +429,7 @@ if (act == "0.1") addLayer("metaAspects", {
             },
         },
         20: {
-            display: "<img src='data/doom.png' style='width:calc(80%);height:calc(80%);margin:10%'></img>",
+            display: "<img src='data/aspects/doom.png' style='width:calc(80%);height:calc(80%);margin:10%'></img>",
             tooltip() { 
                 return format(player[this.layer].buyables[this.id], 0) + " Doom Power" + 
                     (player[this.layer].apAllocated.includes(this.id) ? `<br/><h5>×${format(tmp[this.layer].buyables[this.id].selfBoost)}` : "") 
@@ -431,6 +440,7 @@ if (act == "0.1") addLayer("metaAspects", {
                 let eff = new Decimal(1)
                 if (hasUpgrade("metaAspects", 134)) eff = eff.mul(upgradeEffect("metaAspects", 134))
                 if (hasUpgrade("metaAspects", 115)) eff = eff.mul(upgradeEffect("metaAspects", 115))
+                for (a = 32; a < 392; a += 30) if (hasUpgrade("metaClasses", a)) eff = eff.mul(upgradeEffect("metaClasses", a))
                 return eff
             },
             buy() {
@@ -450,7 +460,7 @@ if (act == "0.1") addLayer("metaAspects", {
             },
         },
         21: {
-            display: "<img src='data/breath.png' style='width:calc(80% - 2px);height:calc(80% - 2px);margin:10%'></img>",
+            display: "<img src='data/aspects/breath.png' style='width:calc(80% - 2px);height:calc(80% - 2px);margin:10%'></img>",
             tooltip() { 
                 return format(player[this.layer].buyables[this.id], 0) + " Breath Power" + 
                     (player[this.layer].apAllocated.includes(this.id) ? `<br/><h5>×${format(tmp[this.layer].buyables[this.id].selfBoost)}` : "") 
@@ -460,6 +470,7 @@ if (act == "0.1") addLayer("metaAspects", {
             selfBoost() {
                 let eff = new Decimal(1)
                 if (hasUpgrade("metaAspects", 125)) eff = eff.mul(upgradeEffect("metaAspects", 125))
+                for (a = 33; a < 393; a += 30) if (hasUpgrade("metaClasses", a)) eff = eff.mul(upgradeEffect("metaClasses", a))
                 return eff
             },
             buy() {
@@ -479,7 +490,7 @@ if (act == "0.1") addLayer("metaAspects", {
             },
         },
         22: {
-            display: "<img src='data/blood.png' style='width:calc(80% - 2px);height:calc(80% - 2px);margin:10%'></img>",
+            display: "<img src='data/aspects/blood.png' style='width:calc(80% - 2px);height:calc(80% - 2px);margin:10%'></img>",
             tooltip() { 
                 return format(player[this.layer].buyables[this.id], 0) + " Blood Power" + 
                     (player[this.layer].apAllocated.includes(this.id) ? `<br/><h5>×${format(tmp[this.layer].buyables[this.id].selfBoost)}` : "") 
@@ -489,6 +500,7 @@ if (act == "0.1") addLayer("metaAspects", {
             selfBoost() {
                 let eff = new Decimal(1)
                 if (hasUpgrade("metaAspects", 135)) eff = eff.mul(upgradeEffect("metaAspects", 135))
+                for (a = 34; a < 394; a += 30) if (hasUpgrade("metaClasses", a)) eff = eff.mul(upgradeEffect("metaClasses", a))
                 return eff
             },
             buy() {
@@ -946,7 +958,7 @@ if (act == "0.1") addLayer("metaAspects", {
         131: {
             ...apparatusUpg,
             title: "BLOOD BOOSTS HEART",
-            description: "Breath Power boosts Heart Power.",
+            description: "Blood Power boosts Heart Power.",
             effect() {
                 if (!player.metaAspects.apAllocated.includes("22")) return new Decimal(1)
                 return player.metaAspects.buyables["22"].add(10).log10()
@@ -959,7 +971,7 @@ if (act == "0.1") addLayer("metaAspects", {
         132: {
             ...apparatusUpg,
             title: "BLOOD BOOSTS RAGE",
-            description: "Breath Power boosts Rage Power.",
+            description: "Blood Power boosts Rage Power.",
             effect() {
                 if (!player.metaAspects.apAllocated.includes("22")) return new Decimal(1)
                 return player.metaAspects.buyables["22"].add(10).log10()
@@ -972,7 +984,7 @@ if (act == "0.1") addLayer("metaAspects", {
         133: {
             ...apparatusUpg,
             title: "BLOOD BOOSTS VOID",
-            description: "Breath Power boosts Void Power.",
+            description: "Blood Power boosts Void Power.",
             effect() {
                 if (!player.metaAspects.apAllocated.includes("22")) return new Decimal(1)
                 return player.metaAspects.buyables["22"].add(10).log10()
@@ -985,7 +997,7 @@ if (act == "0.1") addLayer("metaAspects", {
         134: {
             ...apparatusUpg,
             title: "BLOOD BOOSTS DOOM",
-            description: "Breath Power boosts Doom Power.",
+            description: "Blood Power boosts Doom Power.",
             effect() {
                 if (!player.metaAspects.apAllocated.includes("22")) return new Decimal(1)
                 return player.metaAspects.buyables["22"].add(10).log10()
@@ -1012,8 +1024,13 @@ if (act == "0.1") addLayer("metaAspects", {
 
     update(delta) {
         player.metaAspects.points = player.metaAspects.points.add(tmp.metaAspects.effect.selfGain.mul(delta))
-        for (let a of player.metaAspects.apAllocated) {
-            player.metaAspects.buyables[a] = player.metaAspects.buyables[a].add(tmp.metaAspects.buyables[a].selfBoost.mul(tmp.metaAspects.effect.globalGain).mul(delta))
+
+        let rate = 1
+        if (player.metaClasses.clickables[11] || player.metaClasses.clickables[15] || player.metaClasses.clickables["15a"] || player.metaClasses.clickables["16a"]) rate = 0
+        else if (player.metaClasses.clickables[13]) rate = -1
+
+        if (rate != 0) for (let a of player.metaAspects.apAllocated) {
+            player.metaAspects.buyables[a] = player.metaAspects.buyables[a].add(tmp.metaAspects.buyables[a].selfBoost.mul(tmp.metaAspects.effect.globalGain).mul(rate).mul(delta)).max(0)
         }
     },
     
