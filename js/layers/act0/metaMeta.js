@@ -1623,7 +1623,7 @@ if (act == "0.2") addLayer("metaMeta", {
         },
         83: {
             title: "<p style='transform: scale(-1, -1)'><alternate>CLASSPECTS</alternate>",
-            description: "Rouge Power boosts all Aspect Faucets.",
+            description: "Rogue Power boosts all Aspect Faucets.",
             cost: new Decimal(1),
             currencyDisplayName: "Overflows",
             currencyInternalName: "overflows",
