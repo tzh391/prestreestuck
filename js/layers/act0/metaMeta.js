@@ -1944,7 +1944,7 @@ if (act == "0.2") addLayer("metaMeta", {
         },
         12: {
             requirementDescription: "×4,000,000 Sacrifice Multiplier",
-            effectDescription() { return "Your Overflows and Total Overlows no longer resets when you respec your Eternity Upgrades with the “Meta-Faucet Upgrades also gives you Meta-Faucets” upgrade." },
+            effectDescription() { return "Your Overflows and Total Overflows no longer resets when you respec your Eternity Upgrades with the “Meta-Faucet Upgrades also gives you Meta-Faucets” upgrade." },
             done() { return player.metaMeta.sacrificeMulti.gte(4000000) }
         },
         13: {
