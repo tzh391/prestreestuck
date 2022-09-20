@@ -1010,7 +1010,7 @@ if (act == "0.2") addLayer("metaMeta", {
         cols: 3,
         11: {
             display() {
-                return "Meta-Transend for +1 Meta-Metaness"
+                return "Meta-Transcend for +1 Meta-Metaness"
             },
             canClick() {
                 return player[this.layer].points.gte(Decimal.pow(2, 262143).pow(hasUpgrade("metaMeta", 44) ? player.metaMeta.meta.div(38).add(1).pow(3.5).pow(player.metaMeta.meta.max(100).div(100).pow(0.1)) : 1))
