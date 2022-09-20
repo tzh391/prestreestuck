@@ -450,7 +450,7 @@ if (act.startsWith("0")) addLayer("skaia", {
             },
             48: {
                 title: "<p style='transform: scale(-1, -1)'><alternate>GET SET</alternate>",
-                description: "Slyph and Bard Power affects more to Aspect Essence replacements.",
+                description: "Sylph and Bard Power affects more to Aspect Essence replacements.",
                 cost: new Decimal("ee1515000"),
                 currencyLocation() { return player },
                 currencyDisplayName: "points",
@@ -903,7 +903,7 @@ if (act.startsWith("0")) addLayer("skaia", {
             },
             88: {
                 title: "<p style='transform: scale(-1, -1)'><alternate>INFLATION UPGRADE NINETEEN</alternate>",
-                description: "Automatically do Lunay Sway abolishments.",
+                description: "Automatically do Lunar Sway abolishments.",
                 cost: new Decimal("eee5000"),
                 currencyLocation() { return player },
                 currencyDisplayName: "points",
@@ -912,7 +912,7 @@ if (act.startsWith("0")) addLayer("skaia", {
             },
             89: {
                 title: "<p style='transform: scale(-1, -1)'><alternate>INFLATION UPGRADE TWENTY</alternate>",
-                description: "Automatically do Lunay Sway Class abolishments.",
+                description: "Automatically do Lunar Sway Class abolishments.",
                 cost: new Decimal("eee7000"),
                 currencyLocation() { return player },
                 currencyDisplayName: "points",
