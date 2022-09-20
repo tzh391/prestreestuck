@@ -527,7 +527,7 @@ if (act == "0.2") addLayer("metaMeta", {
             effect(x) { return Decimal.pow(1e20, (x || getBuyableAmount(this.layer, this.id)).pow(0.8)).mul(buyableEffect("metaMeta", 63)).mul(buyableEffect("metaMeta", 64)) },
             canAfford() { return player[this.layer].points.gte(this.cost()) && player[this.layer].buyables[this.id].lt(1000) },
             title() {
-                return format(getBuyableAmount(this.layer, this.id), 0) + " / 1,000<br/>Slyph Booster"
+                return format(getBuyableAmount(this.layer, this.id), 0) + " / 1,000<br/>Sylph Booster"
             },
             display() {
                 return "which are multipling the Metaness effect's power tower before the Overflow nerf by ×" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
@@ -543,7 +543,7 @@ if (act == "0.2") addLayer("metaMeta", {
             effect(x) { return Decimal.pow(1e30, (x || getBuyableAmount(this.layer, this.id)).pow(0.8)).mul(buyableEffect("metaMeta", 63)).mul(buyableEffect("metaMeta", 64)) },
             canAfford() { return player[this.layer].points.gte(this.cost()) && player[this.layer].buyables[this.id].lt(1000) },
             title() {
-                return format(getBuyableAmount(this.layer, this.id), 0) + " / 1,000<br/>Slyph Booster"
+                return format(getBuyableAmount(this.layer, this.id), 0) + " / 1,000<br/>Sylph Booster"
             },
             display() {
                 return "which are multipling the Metaness effect's power tower before the Overflow nerf by ×" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
@@ -738,7 +738,7 @@ if (act == "0.2") addLayer("metaMeta", {
             canAfford() { return getBuyableAmount(this.layer, this.id).lt(120) && player[this.layer].classFaucets[getBuyableAmount(this.layer, this.id) % 12].gte(this.cost()) },
             display() {
                 return "Buy one with<br/>" + format(tmp[this.layer].buyables[this.id].cost) + "<br/>" +
-                ["Rogue", "Thief", "Heir", "Maid", "Page", "Knight", "Seer", "Mage", "Slyph", "Witch", "Bard", "Prince"][getBuyableAmount(this.layer, this.id) % 12] +
+                ["Rogue", "Thief", "Heir", "Maid", "Page", "Knight", "Seer", "Mage", "Sylph", "Witch", "Bard", "Prince"][getBuyableAmount(this.layer, this.id) % 12] +
                 " Faucet"
             },
             buy() {
@@ -2203,7 +2203,7 @@ if (act == "0.2") addLayer("metaMeta", {
                         arr.push(["blank", "15px"])
                         if (hasUpgrade("metaMeta", 73)) {
                             arr.push(["display-text", "Your Rogue Faucets are multipling the Metaness effect's power tower by " + format(tmp.metaMeta.effect.classFaucetPower) + "."])
-                            var clss = ["Rogue", "Thief", "Heir", "Maid", "Page", "Knight", "Seer", "Mage", "Slyph", "Witch", "Bard", "Prince"]
+                            var clss = ["Rogue", "Thief", "Heir", "Maid", "Page", "Knight", "Seer", "Mage", "Sylph", "Witch", "Bard", "Prince"]
                             for (var a = 0; a < 12; a++) {
                                 arr.push(["display-text", clss[a] + " Faucet: " + format(player.metaMeta.classFaucets[a])])
                             }

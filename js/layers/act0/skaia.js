@@ -450,7 +450,7 @@ if (act.startsWith("0")) addLayer("skaia", {
             },
             48: {
                 title: "<p style='transform: scale(-1, -1)'><alternate>GET SET</alternate>",
-                description: "Slyph and Bard Power affects more to Aspect Essence replacements.",
+                description: "Sylph and Bard Power affects more to Aspect Essence replacements.",
                 cost: new Decimal("ee1515000"),
                 currencyLocation() { return player },
                 currencyDisplayName: "points",

@@ -360,7 +360,7 @@ if (act == "0.1") addLayer("metaClasses", {
             },
             canAfford() { return player[this.layer].points.gte(this.cost()) },
             title() {
-                return "<h5>Passive</h5>Slyph Power"
+                return "<h5>Passive</h5>Sylph Power"
             },
             display() {
                 
