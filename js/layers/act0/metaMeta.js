@@ -402,7 +402,7 @@ if (act == "0.2") addLayer("metaMeta", {
                 return format(getBuyableAmount(this.layer, this.id), 0) + " / 1,000<br/>Rogue Booster"
             },
             display() {
-                return "which are multipling the Metaness effect's power tower before the Overflow nerf by ×" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
+                return "which are multiplying the Metaness effect's power tower before the Overflow nerf by ×" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
                     Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Metaness"
             },
             buy() {
@@ -418,7 +418,7 @@ if (act == "0.2") addLayer("metaMeta", {
                 return format(getBuyableAmount(this.layer, this.id), 0) + " / 1,000<br/>Thief Booster"
             },
             display() {
-                return "which are multipling the Metaness effect's power tower before the Overflow nerf by ×" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
+                return "which are multiplying the Metaness effect's power tower before the Overflow nerf by ×" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
                     Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Metaness"
             },
             buy() {
@@ -434,7 +434,7 @@ if (act == "0.2") addLayer("metaMeta", {
                 return format(getBuyableAmount(this.layer, this.id), 0) + " / 1,000<br/>Heir Booster"
             },
             display() {
-                return "which are multipling the Metaness effect's power tower before the Overflow nerf by ×" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
+                return "which are multiplying the Metaness effect's power tower before the Overflow nerf by ×" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
                     Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Metaness"
             },
             buy() {
@@ -450,7 +450,7 @@ if (act == "0.2") addLayer("metaMeta", {
                 return format(getBuyableAmount(this.layer, this.id), 0) + " / 1,000<br/>Maid Booster"
             },
             display() {
-                return "which are multipling the Metaness effect's power tower before the Overflow nerf by ×" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
+                return "which are multiplying the Metaness effect's power tower before the Overflow nerf by ×" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
                     Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Metaness"
             },
             buy() {
@@ -466,7 +466,7 @@ if (act == "0.2") addLayer("metaMeta", {
                 return format(getBuyableAmount(this.layer, this.id), 0) + " / 1,000<br/>Page Booster"
             },
             display() {
-                return "which are multipling the Metaness effect's power tower before the Overflow nerf by ×" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
+                return "which are multiplying the Metaness effect's power tower before the Overflow nerf by ×" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
                     Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Metaness"
             },
             buy() {
@@ -482,7 +482,7 @@ if (act == "0.2") addLayer("metaMeta", {
                 return format(getBuyableAmount(this.layer, this.id), 0) + " / 1,000<br/>Knight Booster"
             },
             display() {
-                return "which are multipling the Metaness effect's power tower before the Overflow nerf by ×" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
+                return "which are multiplying the Metaness effect's power tower before the Overflow nerf by ×" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
                     Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Metaness"
             },
             buy() {
@@ -498,7 +498,7 @@ if (act == "0.2") addLayer("metaMeta", {
                 return format(getBuyableAmount(this.layer, this.id), 0) + " / 1,000<br/>Seer Booster"
             },
             display() {
-                return "which are multipling the Metaness effect's power tower before the Overflow nerf by ×" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
+                return "which are multiplying the Metaness effect's power tower before the Overflow nerf by ×" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
                     Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Metaness"
             },
             buy() {
@@ -514,7 +514,7 @@ if (act == "0.2") addLayer("metaMeta", {
                 return format(getBuyableAmount(this.layer, this.id), 0) + " / 1,000<br/>Mage Booster"
             },
             display() {
-                return "which are multipling the Metaness effect's power tower before the Overflow nerf by ×" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
+                return "which are multiplying the Metaness effect's power tower before the Overflow nerf by ×" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
                     Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Metaness"
             },
             buy() {
@@ -530,7 +530,7 @@ if (act == "0.2") addLayer("metaMeta", {
                 return format(getBuyableAmount(this.layer, this.id), 0) + " / 1,000<br/>Sylph Booster"
             },
             display() {
-                return "which are multipling the Metaness effect's power tower before the Overflow nerf by ×" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
+                return "which are multiplying the Metaness effect's power tower before the Overflow nerf by ×" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
                     Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Metaness"
             },
             buy() {
@@ -546,7 +546,7 @@ if (act == "0.2") addLayer("metaMeta", {
                 return format(getBuyableAmount(this.layer, this.id), 0) + " / 1,000<br/>Sylph Booster"
             },
             display() {
-                return "which are multipling the Metaness effect's power tower before the Overflow nerf by ×" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
+                return "which are multiplying the Metaness effect's power tower before the Overflow nerf by ×" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
                     Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Metaness"
             },
             buy() {
@@ -562,7 +562,7 @@ if (act == "0.2") addLayer("metaMeta", {
                 return format(getBuyableAmount(this.layer, this.id), 0) + " / 1,000<br/>Bard Booster"
             },
             display() {
-                return "which are multipling the Metaness effect's power tower before the Overflow nerf by ×" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
+                return "which are multiplying the Metaness effect's power tower before the Overflow nerf by ×" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
                     Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Metaness"
             },
             buy() {
@@ -578,7 +578,7 @@ if (act == "0.2") addLayer("metaMeta", {
                 return format(getBuyableAmount(this.layer, this.id), 0) + " / 1,000<br/>Prince Booster"
             },
             display() {
-                return "which are multipling the Metaness effect's power tower before the Overflow nerf by ×" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
+                return "which are multiplying the Metaness effect's power tower before the Overflow nerf by ×" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
                     Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Metaness"
             },
             buy() {
@@ -594,7 +594,7 @@ if (act == "0.2") addLayer("metaMeta", {
                 return format(getBuyableAmount(this.layer, this.id), 0) + " / 1,000<br/>Muse Booster"
             },
             display() {
-                return "which are multipling all above Meta-Classes Boosters' effect and all Aspect Faucets by ×" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
+                return "which are multiplying all above Meta-Classes Boosters' effect and all Aspect Faucets by ×" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
                     Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Metaness"
             },
             buy() {
@@ -610,7 +610,7 @@ if (act == "0.2") addLayer("metaMeta", {
                 return format(getBuyableAmount(this.layer, this.id), 0) + " / 1,000<br/>Lord Booster"
             },
             display() {
-                return "which are multipling all above Meta-Classes Boosters' effect, the Muse Booster's effect and all Class Faucets by ×" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
+                return "which are multiplying all above Meta-Classes Boosters' effect, the Muse Booster's effect and all Class Faucets by ×" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
                     Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Metaness"
             },
             buy() {
@@ -626,7 +626,7 @@ if (act == "0.2") addLayer("metaMeta", {
                 return format(getBuyableAmount(this.layer, this.id), 0) + "<br/>Faucet Upgrades"
             },
             display() {
-                return "which are multipling all faucet effeciencies by ×" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
+                return "which are multiplying all faucet effeciencies by ×" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
                     Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Metaness"
             },
             buy() {
@@ -658,7 +658,7 @@ if (act == "0.2") addLayer("metaMeta", {
                 return format(getBuyableAmount(this.layer, this.id), 0) + "<br/>Faucet Upgrade^3s"
             },
             display() {
-                return "which are multipling the Faucet Upgrade^2 effect by ×" + format(tmp[this.layer].buyables[this.id].effect, 3) + ".\n\
+                return "which are multiplying the Faucet Upgrade^2 effect by ×" + format(tmp[this.layer].buyables[this.id].effect, 3) + ".\n\
                     Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Metaness"
             },
             buy() {
@@ -706,7 +706,7 @@ if (act == "0.2") addLayer("metaMeta", {
                 return format(getBuyableAmount(this.layer, this.id), 0) + "<br/>Faucet Upgrade^6s"
             },
             display() {
-                return "which are multipling the Faucet Upgrade^5 effect by ×" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
+                return "which are multiplying the Faucet Upgrade^5 effect by ×" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
                     Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Metaness"
             },
             buy() {
@@ -798,7 +798,7 @@ if (act == "0.2") addLayer("metaMeta", {
                 return format(getBuyableAmount(this.layer, this.id), 0) + "<br/>Meta-Faucet Upgrades"
             },
             display() {
-                return "which are multipling all Meta-Faucet efficiency by ×" + format(tmp[this.layer].buyables[this.id].effect) + ". Each power of 2 also award you with a bonus Meta-Faucet.\n\
+                return "which are multiplying all Meta-Faucet efficiency by ×" + format(tmp[this.layer].buyables[this.id].effect) + ". Each power of 2 also award you with a bonus Meta-Faucet.\n\
                     Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " of Meta-Faucet #1"
             },
             buy() {
@@ -843,7 +843,7 @@ if (act == "0.2") addLayer("metaMeta", {
                 return format(getBuyableAmount(this.layer, this.id), 0) + "<br/>Meta-Faucet Upgrade^3s"
             },
             display() {
-                return "which are multipling the Meta-Faucet Upgrade^2 effect by ×" + format(tmp[this.layer].buyables[this.id].effect) + ". Each perfect square also award you with a bonus Meta-Faucet.\n\
+                return "which are multiplying the Meta-Faucet Upgrade^2 effect by ×" + format(tmp[this.layer].buyables[this.id].effect) + ". Each perfect square also award you with a bonus Meta-Faucet.\n\
                     Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " of Meta-Faucet #50"
             },
             buy() {
@@ -2194,7 +2194,7 @@ if (act == "0.2") addLayer("metaMeta", {
                     var arr = [["blank", "15px"]]
                         if (player.subtabs.metaMeta.stuff == "Faucets") {
                         if (hasUpgrade("metaMeta", 62)) {
-                            arr.push(["display-text", "Your Time Faucets are multipling the Metaness effect's power tower by " + format(tmp.metaMeta.effect.aspectFaucetPower) + "."])
+                            arr.push(["display-text", "Your Time Faucets are multiplying the Metaness effect's power tower by " + format(tmp.metaMeta.effect.aspectFaucetPower) + "."])
                             var asps = ["Time", "Space", "Mind", "Heart", "Hope", "Rage", "Light", "Void", "Life", "Doom", "Breath", "Blood"]
                             for (var a = 0; a < 12; a++) {
                                 arr.push(["display-text", asps[a] + " Faucet: " + format(player.metaMeta.aspectFaucets[a])])
@@ -2202,7 +2202,7 @@ if (act == "0.2") addLayer("metaMeta", {
                         }
                         arr.push(["blank", "15px"])
                         if (hasUpgrade("metaMeta", 73)) {
-                            arr.push(["display-text", "Your Rogue Faucets are multipling the Metaness effect's power tower by " + format(tmp.metaMeta.effect.classFaucetPower) + "."])
+                            arr.push(["display-text", "Your Rogue Faucets are multiplying the Metaness effect's power tower by " + format(tmp.metaMeta.effect.classFaucetPower) + "."])
                             var clss = ["Rogue", "Thief", "Heir", "Maid", "Page", "Knight", "Seer", "Mage", "Sylph", "Witch", "Bard", "Prince"]
                             for (var a = 0; a < 12; a++) {
                                 arr.push(["display-text", clss[a] + " Faucet: " + format(player.metaMeta.classFaucets[a])])
