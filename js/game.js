@@ -395,7 +395,10 @@ function gameLoop(diff) {
 
 var ticking = false
 var diff = 0;
-
+function setUpPGSettings(){
+	player.spaceBarPauses = true
+}
+var paused = false
 var interval = setInterval(function() {
 	if (player===undefined||tmp===undefined) return;
 	if (ticking) return;
@@ -412,6 +415,7 @@ var interval = setInterval(function() {
 		}
 		if (!meta.options.offlineProd || player.offTime.remain <= 0) player.offTime = undefined
 	}
+	if (paused || player.paused) diff = 0
 	if (player.devSpeed) diff *= player.devSpeed
 	player.time = now
 	if (needCanvasUpdate){ resizeCanvas();
