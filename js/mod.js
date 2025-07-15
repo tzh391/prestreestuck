@@ -311,6 +311,7 @@ var displayThings = [
 		for (lys in LAYERS) {
 			if (player[LAYERS[lys]] !== undefined && (!player[LAYERS[lys]].unlocked || (!tmp[LAYERS[lys]].layerShown && player.act == "0.0" && !inChallenge("aspDoom", 12)))) rem++
 		}
+		if (paused || player.paused) return "<bdi style='color:#CC0033'>THE GAME IS PAUSED</bdi>"
 		if (act == "0.0") rem += 5;
 		else if (act == "0.1") rem += 1;
 		var acts = {
