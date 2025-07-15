@@ -145,6 +145,14 @@ var systemComponents = {
 		<discord invite="F3xveHV" title="The Modding Tree Discord" desc="All the mods, mod finders and mod makers!"></discord>
 		<discord invite="wwQfgPa" title="Jacorb's Main Server" desc="Server of the person who made the original game"></discord>
 		<br><br>
+  	Toggles:
+		<table>
+			<tr>
+				<td><button class="opt" onclick="toggleShift()">Force toggle shift<span><bdi style='color:#CC0033'><br>{{shiftDown?"Down":"Up"}}</bdi></span></button></td>
+				<td><button class="opt" onclick="player.spaceBarPauses = !player.spaceBarPauses">Toggle space bar pausing<span><bdi style='color:#CC0033'><br>{{player.spaceBarPauses?"Yes":"No"}}</bdi></span></button></td>
+				<td><button class="opt" onclick="player.paused = !player.paused">Toggle pause<span><bdi style='color:#CC0033'><br>{{player.paused?"Paused":"Running"}}</bdi></span></button></td>
+			</tr>
+		</table>
         Time Played: {{ formatTime(player.timePlayed) }}<br><br>
         <h3>Hotkeys</h3><br>
         <span v-for="key in hotkeys" v-if="player[key.layer].unlocked && tmp[key.layer].hotkeys[key.id].unlocked"><br>{{key.description}}</span>
