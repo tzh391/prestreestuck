@@ -343,5 +343,16 @@ if (act == "0.0") addLayer("aspTime", {
 
     hotkeys: [
         { key: "t", description: "T: Absorb Time Power", onPress() { if (canReset(this.layer)) doReset(this.layer) } },
+        {
+                        key: " ", 
+                        description: "Space: Toggle Pause", 
+                        onPress(){
+                                if (player.spaceBarPauses) player.paused = !player.paused
+                        },
+                        unlocked(){
+                                return true
+                        },
+                },
     ],
+    
 })
