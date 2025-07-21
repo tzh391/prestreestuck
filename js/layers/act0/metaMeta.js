@@ -543,7 +543,7 @@ if (act == "0.2") addLayer("metaMeta", {
             effect(x) { return Decimal.pow(1e30, (x || getBuyableAmount(this.layer, this.id)).pow(0.8)).mul(buyableEffect("metaMeta", 63)).mul(buyableEffect("metaMeta", 64)) },
             canAfford() { return player[this.layer].points.gte(this.cost()) && player[this.layer].buyables[this.id].lt(1000) },
             title() {
-                return format(getBuyableAmount(this.layer, this.id), 0) + " / 1,000<br/>Slyph Booster"
+                return format(getBuyableAmount(this.layer, this.id), 0) + " / 1,000<br/>Witch Booster"
             },
             display() {
                 return "which are multipling the Metaness effect's power tower before the Overflow nerf by ×" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
